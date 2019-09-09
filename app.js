@@ -10,5 +10,8 @@ app.listen(3000, () => {
 });
 
 app.get('/', (req, res) => {
-    res.render('main');
+    res.render('main', {
+        foo: 4,
+        bar: 7
+    });
 })
